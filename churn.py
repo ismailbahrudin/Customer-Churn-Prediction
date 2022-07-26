@@ -43,5 +43,9 @@ st.subheader('Prediction')
 #st.write(churn.target_names[prediction])
 st.write(prediction)
 
+if prediction==0:
+ st.subheader('Customer will not churn')
+elif prediction==1:
+ st.subheader('Customer will churn')
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
