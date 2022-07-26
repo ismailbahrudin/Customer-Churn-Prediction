@@ -40,7 +40,7 @@ dataf= pd.DataFrame(['Churn','Not Churn',])
 st.write(dataf)
 
 st.subheader('Prediction')
-st.write(iris.target_names[prediction])
+st.write(churn.target_names[prediction])
 st.write(prediction)
 
 st.subheader('Prediction Probability')
