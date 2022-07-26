@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
- Simple Churn Customer Prediction App
-This app predicts the **Customer Churn** type!
+ Simple Churn Customer Prediction App.
+This app predicts the **Customer Churn** by their credit score, age, and tenure.
 """)
 
 st.sidebar.header('User Input Parameters')
@@ -44,8 +44,8 @@ st.subheader('Prediction')
 st.write(prediction)
 
 if prediction==0:
- st.subheader('Customer will not churn')
+ st.write('''Customer will not churn''')
 elif prediction==1:
- st.subheader('Customer will churn')
+ st.write('''Customer will churn''')
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
