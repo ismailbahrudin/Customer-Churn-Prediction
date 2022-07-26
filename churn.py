@@ -26,7 +26,7 @@ st.subheader('User Input parameters')
 st.write(df)
 
 churn = pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/Discount-Profit/3745beb6bba0461ce7644161839bfdbd99232625/data.csv')
-X = churn['Score','Age','Tenure']
+X = churn.drop(['Row','Id','Surname','Nationality','Gender','Balance','Products','Card','Active','Salary','Exited'],axis=1)
 Y = churn['Exited']
 
 clf = RandomForestClassifier()
