@@ -13,8 +13,7 @@ def user_input_features():
     score = st.sidebar.slider('Credit score of the members', 350, 850, 500)
     age = st.sidebar.slider('Age of the member', 18, 100, 30)
     tenure = st.sidebar.slider('Tenure of the members', 0, 15, 7)
-
-     data = {'score': score,
+    data = {'score': score,
             'age': age,
             'tenure': tenure,}
     features = pd.DataFrame(data, index=[0])
