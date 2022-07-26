@@ -1,9 +1,10 @@
+%%writefile myfirstapp.py
 import streamlit as st
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
-# Simple Churn Customer Prediction App
+ Simple Churn Customer Prediction App
 This app predicts the **Customer Churn** type!
 """)
 
@@ -40,7 +41,7 @@ dataf= pd.DataFrame(['Churn','Not Churn',])
 st.write(dataf)
 
 st.subheader('Prediction')
-#st.write(iris.target_names[prediction])
+st.write(iris.target_names[prediction])
 st.write(prediction)
 
 st.subheader('Prediction Probability')
