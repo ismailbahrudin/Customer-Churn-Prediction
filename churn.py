@@ -30,7 +30,7 @@ churn = pd.read_csv('https://raw.githubusercontent.com/ismailbahrudin/Discount-P
 X = churn['Score']
 Y = churn['Exited']
 
-x.reshape(-1, 1)
+X.reshape(-1, 1)
 clf = RandomForestClassifier()
 clf.fit(X, Y)
 
